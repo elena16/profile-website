@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Elena is a skilled Front-End Developer with over 10 years of experience in building innovative, user-friendly websites. Specializing in the forex and real estate sectors, she combines creativity with technical expertise to help companies establish a strong online presence and deliver exceptional digital experiences. A collaborative leader with a passion for UX design and digital strategy, Elena is dedicated to driving business growth through impactful web solutions.">
+    <title>Elena Tserioti | Web Developer-Team Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pattern.css@1.0.0/dist/pattern.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/7/Stats.min.js" integrity="sha512-ey3wf3z1WUgQ6/XU/lV1UVQkbCpWsyQANkBst88XXWHok9fXKp55G365lLhScYihGpkzhiZz75r+8isUSCKRIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            color: #000;
+            font-style: normal;
+            min-height: 100vh;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        ::selection {
+            background: rgb(255 235 51 / 30%)
+        }
+        header {
+            display: table;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        header .header-inner h1 {
+            font-size: 6vw;
+            line-height: 6vw;
+            text-align: right;
+            color: #000;
+            margin: 0;
+        }
+        #particles-js {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+        .container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+        @media screen and (min-width: 1600px) {
+          .container {
+            max-width: 80vw !important;
+          }
+        }
+        @media screen and (min-width: 1600px) {
+          .container {
+            max-width: 1640px !important;
+          }
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1599px) {
+          .container {
+            max-width: 80vw;
+          }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          .container {
+            max-width: 80vw !important;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .container {
+            max-width: 80vw !important;
+          }
+        }
+        .profile-outer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 0 20px;
+            text-align: left;
+            max-width: 1600px;
+            margin: 0 auto;
+            height: 100vh; 
+        }
+        .profile-outer p {
+            font-size: 0.9vw;
+            line-height: 1.2vw;
+            margin: 0 0 15px;
+            font-weight: 400;
+            color: #fff;
+            text-align: justify;
+        }
+        .profile-outer p:last-child {
+            margin: 0;
+        }
+        .profile-outer .column-left {
+            flex: 1;
+            border: 15px solid #ffeb33;
+            padding: 30px 50px;
+            border-radius: 30px;
+            background-color: rgb(237 213 0 / 21%);
+        }
+        .profile-outer .column-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 50px 0;
+        }
+        .profile-outer .profile-bg {
+            width: 400px;
+            height: 400px;
+            background: #ffeb33;
+            animation: corner 5s;
+            border-radius: 50%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .profile-outer .profile-image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 240px;
+            width: 240px;
+            z-index: 999;
+            border-radius: 50%;
+        }
+        @keyframes corner {
+          0% {
+            border-top-left-radius: 1% 50%;
+          }
+          12.5% {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+          }
+          25% {
+            border-top-right-radius: 1% 50%;
+          }
+          37.5% {
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+          }
+          50% {
+            border-bottom-right-radius: 50% 1%;
+          }
+          62.5% {
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+          }
+          75% {
+            border-bottom-left-radius: 1% 50%;
+          }
+          87.5% {
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+          }
+          100% {
+            border-top-left-radius: 50% 1%;
+          }
+        }
+        /* Responsive Styles */
+        @media (max-width: 1600px) {
+            .profile-outer {
+                flex-direction: column; 
+                padding: 20px; 
+                height: auto; 
+            }
+        }
+        @media (max-width: 991px) {
+            header {
+                position: relative;
+                padding: 40px 0;
+            }
+            .container {
+                flex-direction: column; 
+            }
+            .profile-outer {
+                flex-direction: column; 
+                padding: 20px; 
+                height: auto; 
+            }
+            .profile-outer p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .profile-outer .column-left,
+            .profile-outer .column-right {
+                width: 100%; 
+                margin-bottom: 20px; 
+            }
+            header .header-inner h1 {
+                font-size: 80px; 
+                line-height: 80px;
+                text-align: center;
+            }
+            .profile-outer .column-right .profile-bg {
+                width: 300px;
+                height: 300px;
+            }
+            .profile-outer .column-right .profile-image {
+                height: 200px;
+                width: 200px;
+            }
+        }
+        @media (max-width: 768px) {
+            header .header-inner h1 {
+                font-size: 60px;
+                line-height: 60px;
+            }
+            .profile-outer {
+                padding: 10px;
+                height: auto; 
+            }
+            .profile-outer .column-left {
+                padding: 20px;
+                border: 10px solid #ffeb33;
+            }
+            .profile-outer .column-left,
+            .profile-outer .column-right {
+                width: 100%;
+            }
+            .profile-outer .column-right .profile-bg {
+                width: 250px;
+                height: 250px;
+            }
+            .profile-outer .column-right .profile-image {
+                height: 180px;
+                width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div> 
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <h1 class="pattern-diagonal-lines-sm text-pattern" style="background-color:black;color:#fff;">Meet Elena</h1>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <section class="profile-outer">
+        <div class="container">
+            <div class="column-left pattern-dots-sm" style="background-color:#000;color:#666;">
+                <p>A dynamic and talented 38-year-old Front-End Web Developer with over a decade of experience shaping the digital landscape in the online marketing world, particularly for the forex and real estate industries. As a mother of two and a Computer Science graduate, Elena has mastered the art of balancing her technical career with her personal life, demonstrating resilience, creativity, and leadership every step of the way.</p>
+                <p>Starting her journey as a successful fashion blogger during her college years, Elena's flair for design, user experience, and content creation blossomed early on. Her blog gained a loyal following, showcasing not only her eye for fashion but also her ability to build a vibrant, engaged community.</p>
+                <p>Elena's professional journey has been equally impressive. Over the past 10 years, she has honed her skills in Front-End development, specializing in delivering engaging, user-friendly websites that drive business results. Her work has enabled forex brokers and real estate firms to improve their online presence, attract clients, and grow their brands.</p>
+                <p>As an extrovert, Elena thrives in team environments, collaborating effectively with designers, marketers, and stakeholders to bring digital visions to life. Her strong communication skills and deep understanding of both the technical and creative aspects of web development make her an invaluable asset in any fast-paced, client-focused setting.</p>
+                <p>Now, Elena is ready to take her career to the next level, bringing her unique blend of creativity, technical expertise, and people skills to new challenges. Whether it's leading a front-end team, driving UX innovation, or consulting on digital strategy, Elena is poised to make a powerful impact.</p>
+            </div>
+            <div class="column-right">
+                <div class="profile-bg"></div>
+                <div class="profile-image" style="background-image:url('profile-img.jpg');"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer></footer>
+
+    <script>
+        particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#000"},"shape":{"type":"circle","stroke":{"width":2,"color":"#000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.0959616153538585,"random":false,"anim":{"enable":true,"speed":0,"opacity_min":0,"sync":true}},"size":{"value":1,"random":true,"anim":{"enable":false,"speed":10,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#000","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":1},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);
+    </script>   
+</body>
+</html>
