@@ -5,213 +5,506 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Elena is a skilled Front-End Developer with over 10 years of experience in building innovative, user-friendly websites. Specializing in the forex and real estate sectors, she combines creativity with technical expertise to help companies establish a strong online presence and deliver exceptional digital experiences. A collaborative leader with a passion for UX design and digital strategy, Elena is dedicated to driving business growth through impactful web solutions.">
     <title>Elena Tserioti | Web Developer-Team Leader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <style>
         ::selection {
-            background: rgba(202, 221, 207, 0.3)
-        }
-        @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-        :root {
-          --bg: #000000;
-          --clr-1: #ccc;
-          --clr-2: #b3b3b3;
-          --clr-3: #f5f5f5;
-          --clr-4: #999;
-        
-          --blur: 1rem;
-          --fs: clamp(3rem, 8vw, 7rem);
-          --ls: clamp(-1.75px, -0.25vw, -3.5px);
-        }
-        body {
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            background-color: #000;
+            background: #000;
             color: #fff;
-            font-family: "Mulish", cursive;
         }
-        *,
-        *::before,
-        *::after {
-          font-family: inherit;
-          box-sizing: border-box;
-        }
-        .content {
-          text-align: center;
-        }
-        .title {
-          font-size: var(--fs);
-          font-weight: 800;
-          letter-spacing: var(--ls);
-          position: relative;
-          overflow: hidden;
-          background: var(--bg);
-          margin: 0;
-        }
-        
-        .subtitle {
-          max-width: 900px;
-          width:100%;
-          text-align:justify;
-          
-        }
-        .elena {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 2;
-          mix-blend-mode: darken;
-          pointer-events: none;
-        }
-        .elena__item {
-          overflow: hidden;
-          position: absolute;
-          width: 60vw;
-          height: 60vw;
-          background-color: var(--clr-1);
-          border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-          filter: blur(var(--blur));
-          mix-blend-mode: overlay;
-        }
-        .elena__item:nth-of-type(1) {
-          top: -50%;
-          animation: elena-border 6s ease-in-out infinite,
-            elena-1 12s ease-in-out infinite alternate;
-        }
-        
-        .elena__item:nth-of-type(2) {
-          background-color: var(--clr-3);
-          right: 0;
-          top: 0;
-          animation: elena-border 6s ease-in-out infinite,
-            elena-2 12s ease-in-out infinite alternate;
-        }
-        .elena__item:nth-of-type(3) {
-          background-color: var(--clr-2);
-          left: 0;
-          bottom: 0;
-          animation: elena-border 6s ease-in-out infinite,
-            elena-3 8s ease-in-out infinite alternate;
-        }
-        .elena__item:nth-of-type(4) {
-          background-color: var(--clr-4);
-          right: 0;
-          bottom: -50%;
-          animation: elena-border 6s ease-in-out infinite,
-            elena-4 24s ease-in-out infinite alternate;
-        }
-        @keyframes elena-1 {
-          0% {
-            top: 0;
-            right: 0;
-          }
-          50% {
-            top: 100%;
-            right: 75%;
-          }
-          75% {
-            top: 100%;
-            right: 25%;
-          }
-          100% {
-            top: 0;
-            right: 0;
-          }
-        }
-        @keyframes elena-2 {
-          0% {
-            top: -50%;
-            left: 0%;
-          }
-          60% {
-            top: 100%;
-            left: 75%;
-          }
-          85% {
-            top: 100%;
-            left: 25%;
-          }
-          100% {
-            top: -50%;
-            left: 0%;
-          }
-        }
-        @keyframes elena-3 {
-          0% {
-            bottom: 0;
-            left: 0;
-          }
-          40% {
-            bottom: 100%;
-            left: 75%;
-          }
-          65% {
-            bottom: 40%;
-            left: 50%;
-          }
-          100% {
-            bottom: 0;
-            left: 0;
-          }
-        }
-        @keyframes elena-4 {
-          0% {
-            bottom: -50%;
-            right: 0;
-          }
-          50% {
-            bottom: 0%;
-            right: 40%;
-          }
-          90% {
-            bottom: 50%;
-            right: 25%;
-          } 
-          100% {
-            bottom: -50%;
-            right: 0;
-          }
-        }
-        @keyframes elena-border {
-          0% {
-            border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-          }
-          25% {
-            border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
-          }    
-          50% {
-            border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
-          }
-        
-          75% {
-            border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
-          }
-          100% {
-            border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
-          }
-        }
+            /* Variables */
+            /* Mixins and functions */
+            /* Reset */
+            * {
+            box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: 'Mulish', cursive;
+            }
+            img {
+                max-width: 100%;
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            /* Typography */
+            body {
+                font-family: "Mulish", cursive;
+            }
+            p {
+                font-size: 1rem;
+                color: #fff;
+            }
+            @media (min-width: 40em) {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            @media (min-width: 60em) {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+            h1 {
+                font-size: 3rem;
+                color: #000;
+            }
+            @media (min-width: 40em) {
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+            @media (min-width: 60em) {
+                h1 {
+                    font-size: 6.875rem;
+                }
+            }
+            h2 {
+                font-size: 1.875rem;
+                letter-spacing: 0.03em;
+                margin: 0;
+            }
+            @media (min-width: 40em) {
+                h2 {
+                    font-size: 3.75rem;
+                }
+            }
+            @media (min-width: 60em) {
+                h2 {
+                    font-size: 5.5rem;
+                }
+            }
+            a {
+                color: inherit;
+            }
+            /* Header */
+            .page-header {
+                position: fixed;
+                z-index: 2;
+                width: 100%;
+            }
+            /* Scroll behaviour */
+            @media (min-height: 30em) {
+                main {
+                    scroll-snap-type: y mandatory;
+                    height: 100vh;
+                    overflow-y: scroll;
+                    padding: 20px 0 20px 20px;
+                }
+            }
+            /* Nav */
+            .nav-list {
+                display: flex;
+                height: 5rem;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0.625rem 1.25rem;
+            }
+            .nav-item--cta {
+                margin-left: 1.25rem;
+            }
+            .nav-item--cta a {
+                background: transparent;
+                text-align: center;
+            }
+            .nav-item--cta a .fab {
+                font-size: 25px;
+                text-transform: uppercase;
+                line-height: 1;
+                color: #fff;
+            }
+            .nav-item--cta a:hover .fab, .nav-item--cta a:focus .fab {
+                text-decoration: none;
+                color: #000;
+            }
+            /* Sections */
+            .section {
+                color: white;
+                position: relative;
+                scroll-snap-align: center;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            @media (min-height: 30em) {
+                .section {
+                    height: 100vh;
+                }
+            }
+            .section-header {
+                display: none;
+                position: sticky;
+                top: 0;
+                left: 0;
+                padding: 1.25rem;
+                color: #6b6a67;
+                height: 5rem;
+                flex: 0 0 auto;
+                z-index: 2;
+                align-items: center;
+                width: 300px;
+                clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+                background-color: black;
+            }
+            @media (min-width: 60em) {
+                .section-header {
+                    display: flex;
+                }
+            }
+            .section-title {
+                margin: 0;
+                font-size: 1.2rem;
+                letter-spacing: 0.03rem;
+            }
+            .section-content {
+                --pad: 1.25rem;
+                padding: var(--pad);
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                position: relative;
+                z-index: 1;
+            }
+            @media (min-width: 60em) {
+                .section-content {
+                    --pad: 2.5rem;
+                    display: grid;
+                    grid-template-columns: 4fr 3fr 1fr 4fr 2fr 2fr 4fr 1fr 3fr 4fr;
+                    grid-template-rows: minmax(0, 1fr) repeat(6, minmax(2.5rem, auto)) minmax(0, 1fr);
+                    gap: 1.25rem;
+                }
+            }
+            @media (min-height: 30em) {
+                .section-content > * {
+                    opacity: 0;
+                    transform: translate3d(0, 4rem, 0);
+                    transition: opacity 800ms var(--delay), transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay);
+                }
+            }
+            .is-visible .section-content > * {
+                opacity: 1;
+                transform: translate3d(0, 1rem, 0);
+            }
+            .is-visible .section-img {
+                opacity: 0.75;
+            }
+
+            .section-main-title {
+                width: 100%;
+                text-align: center;
+            }
+            @media (min-width: 60em) {
+                .section-main-title {
+                    text-align: left;
+                }
+            }
+            .section-main-title--left {
+                grid-column: 2/-2;
+                grid-row: 4/6;
+            }
+            .section-main-title--right {
+                grid-column: 2/-2;
+                grid-row: 4/6;
+            }
+            @media (min-width: 60em) {
+                .section-main-title--right {
+                    text-align: right;
+                }
+            }
+            .section-img {
+                max-width: 18.75rem;
+                margin-bottom: 1.875rem;
+                grid-column: 4/-1;
+                grid-row: 1/-1;
+            }
+            @media (min-width: 60em) {
+                .section-img {
+                    margin-bottom: 0;
+                    max-width: none;
+                }
+            }
+            .section-img--left {
+                grid-column: 1/-3;
+            }
+            .section-intro {
+                text-align: center;
+                max-width: 90ch;
+            }
+            @media (min-width: 60em) {
+                .section-intro {
+                    text-align: left;
+                }
+            }
+            .hero {
+                max-height: 50rem;
+                position: relative;
+                color: #fff;
+                background-color: #364b3b;
+                overflow: hidden;
+            }
+            .hero-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hero-content {
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.25rem;
+            }
+            .hero-bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .hero-bg::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                top: 0;
+                left: 0;
+                background: radial-gradient(rgba(0, 0, 0, 0.6) 70%, black);
+                opacity: 1;
+                transition: opacity 200ms;
+            }
+            .is-visible .hero-bg {
+                filter: grayscale(0);
+            }
+            .is-visible .hero-bg::after {
+                opacity: 0.6;
+            }
+            .hero-text {
+                position: relative;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                text-shadow: 0 0.1em 0.9375rem rgba(0, 0, 0, 0.25);
+            }
+            .hero-title {
+                margin-bottom: 0;
+                width: 100%;
+                z-index: 1;
+            }
+            .hero-intro {
+                width: 100%;
+                z-index: 1;
+            }
+            @media (min-width: 60em) {
+                .hero-intro {
+                    font-size: 1.375rem;
+                }
+            }
+            .hero-footprint {
+                opacity: 0.7;
+                position: absolute;
+                width: 150%;
+                height: 150%;
+                object-fit: contain;
+                object-position: cneter;
+            }
+            .gentle-giants-intro {
+                grid-column: 3/-2;
+                grid-row: 6/8;
+            }
+            .gentle-giants-img {
+                grid-column: 4/-2;
+                grid-row: 1/-2;
+            }
+            .carnivore-kingdom-intro {
+                grid-column: -6/-2;
+                grid-row: 6/8;
+            }
+            .aerial-adventure-intro {
+                grid-column: 3/-2;
+                grid-row: 6/8;
+            }
     </style>
 </head>
 <body>
     <!-- Main Section -->
-   <div class="content">
-      <h1 class="title">Elena Tserioti
-            <div class="elena">
-                <div class="elena__item"></div>
-                <div class="elena__item"></div>
-                <div class="elena__item"></div>
-                <div class="elena__item"></div>
+    <header data-header class="page-header">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item nav-item--cta">
+                    <a href="https://www.linkedin.com/in/elena-tserioti-0640b4164/" target="_blank">
+                        <i class="fab fa-linkedin""></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section hero">
+            <div class="hero-bg">
+                <img
+                    class="hero-img"
+                    srcset="
+                        https://images.pexels.com/photos/4834961/pexels-photo-4834961.jpeg 2000w,
+                        https://images.pexels.com/photos/4834961/pexels-photo-4834961.jpeg 1200w,
+                        https://images.pexels.com/photos/4834961/pexels-photo-4834961.jpeg 800w"
+                    src="hhttps://images.pexels.com/photos/4834961/pexels-photo-4834961.jpeg"
+                    alt="This is me"
+                />
             </div>
-        </h1>
-        <p class="subtitle">A dynamic 38-year-old Front-End Developer with over a decade of experience in online marketing, particularly in the forex and real estate sectors. As a mother of two and a Computer Science graduate, Elena seamlessly balances her technical career with personal life, showcasing resilience and leadership.</p>
-        <p class="subtitle">Elena’s journey began as a successful fashion blogger in college, where her passion for design and user experience flourished, building a loyal following and vibrant community.</p> 
-        <p class="subtitle">With 10 years of Front-End expertise, she’s helped forex brokers and real estate firms enhance their online presence, attract clients, and grow their brands.</p>
-        <p class="subtitle">An extrovert, Elena excels in team settings, collaborating with designers, marketers, and stakeholders. Her strong communication and technical skills make her a valuable asset in fast-paced environments.</p>
-        <p class="subtitle">Ready for new opportunities, Elena is eager to apply her blend of creativity, technical expertise, and collaboration skills to new projects. Whether contributing to innovative digital solutions or enhancing user experiences, she’s poised to make a meaningful impact in any setting.</p>
-    </div>
+            <div
+                class="hero-content"
+                data-content
+            >
+                <div class="hero-text">
+                    <h1 class="hero-title">hello,<br />this is <span style="color:#fff;">elena</span>.</h1>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section gentle-giants">
+            <header class="section-header">
+                <h3 class="section-title">Intro</h3>
+            </header>
+            <div
+                class="section-content section-content--gentle-giants"
+                data-content
+            >
+                <div class="section-img" style="background-color:#FF9500;"></div>
+                <h2 class="section-main-title section-main-title--left">
+                    Introduction
+                </h2>
+                <div class="section-intro gentle-giants-intro">
+                    <p>A dynamic and talented Front-End Web Developer with over a decade of experience shaping the digital landscape in the online marketing world, particularly for the forex and real estate industries. As a mother of two and a Computer Science graduate, Elena has mastered the art of balancing her technical career with her personal life, demonstrating resilience, creativity, and leadership every step of the way.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section carnivore-kingdom">
+            <header class="section-header">
+                <h3 class="section-title">Early Journey</h3>
+            </header>
+            <div
+                class="section-content"
+                data-content
+            >
+                <div class="section-img section-img--left" style="background-color:#007AFF;"></div>
+                <h2 class="section-main-title section-main-title--right">Early Journey</h2>
+                <div class="section-intro carnivore-kingdom-intro">
+                    <p>Starting her journey as a successful fashion blogger during her college years, Elena's flair for design, user experience, and content creation blossomed early on. Her blog gained a loyal following, showcasing not only her eye for fashion but also her ability to build a vibrant, engaged community.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section aerial-adventure">
+            <header class="section-header">
+                <h3 class="section-title">Professional Expertise</h3>
+            </header>
+            <div
+                class="section-content"
+                data-content
+            >
+                <div class="section-img" style="background-color:#4CD964;"></div>
+                <h2 class="section-main-title section-main-title--left">Professional Expertise</h2>
+                <div class="section-intro aerial-adventure-intro">
+                    <p>Elena's professional journey has been equally impressive. Over the past 10 years, she has honed her skills in Front-End development, specializing in delivering engaging, user-friendly websites that drive business results. Her work has enabled forex brokers and real estate firms to improve their online presence, attract clients, and grow their brands.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section carnivore-kingdom">
+            <header class="section-header">
+                <h3 class="section-title">Team Collaboration</h3>
+            </header>
+            <div
+                class="section-content"
+                data-content
+            >
+                <div class="section-img section-img--left" style="background-color:#ffe600;"></div>
+                <h2 class="section-main-title section-main-title--right">Team Collaboration</h2>
+                <div class="section-intro carnivore-kingdom-intro">
+                    <p>As an extrovert, Elena thrives in team environments, collaborating effectively with designers, marketers, and stakeholders to bring digital visions to life. Her strong communication skills and deep understanding of both the technical and creative aspects of web development make her an invaluable asset in any fast-paced, client-focused setting.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section aerial-adventure">
+            <header class="section-header">
+                <h3 class="section-title">Growth and Goals</h3>
+            </header>
+            <div
+                class="section-content"
+                data-content
+            >
+                <div class="section-img" style="background-color:#5856D6;"></div>
+                <h2 class="section-main-title section-main-title--left">Growth and Goals</h2>
+                <div class="section-intro aerial-adventure-intro">
+                    <p>Now, Elena is ready to take her career to the next level, bringing her unique blend of creativity, technical expertise, and people skills to new challenges. Whether it's leading a front-end team, driving UX innovation, or consulting on digital strategy, Elena is poised to make a powerful impact.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section aerial-adventure">
+            <header class="section-header">
+                <h3 class="section-title">Inspiration</h3>
+            </header>
+            <div
+                class="section-content"
+                data-content
+            >
+                <div class="section-img section-img--left" style="background-color:#5AC8FA;"></div>
+                <h2 class="section-main-title section-main-title--left">Inspiration</h2>
+                <div class="section-intro aerial-adventure-intro">
+                    <p>In my work, I always strive to build not just products, but experiences that connect with people on a deeper level.<br>As Seth Godin wisely said, <i>"People do not buy goods and services. They buy relations, stories, and magic"</i>.<br>This belief guides everything I do.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = [...document.querySelectorAll("section")];
+            let options = {
+                rootMargin: "0px",
+                threshold: 0.25  // Lowered the threshold for better performance
+            };
+            const callback = (entries, observer) => {
+                entries.forEach(entry => {
+                    const { target } = entry;
+                    if (entry.isIntersecting) {
+                        target.classList.add("is-visible");
+                    } else {
+                        target.classList.remove("is-visible");
+                    }
+                });
+            };
+            const observer = new IntersectionObserver(callback, options);
+            // Initialize sections visibility on load
+            sections.forEach((section) => {
+                const sectionChildren = [...section.querySelectorAll("[data-content] > *")];
+    
+                sectionChildren.forEach((el, index) => {
+                    requestAnimationFrame(() => {
+                        el.style.setProperty("--delay", `${index * 300}ms`);  // Reduced delay for smoother scrolling
+                    });
+                });
+                observer.observe(section);
+                // Immediate check for visibility on load
+                if (section.getBoundingClientRect().top < window.innerHeight) {
+                    section.classList.add("is-visible");
+                }
+            });
+        });
+    </script>    
 </body>
 </html>
