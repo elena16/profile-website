@@ -5,30 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Elena is a skilled Front-End Developer with over 10 years of experience in building innovative, user-friendly websites. Specializing in the forex and real estate sectors, she combines creativity with technical expertise to help companies establish a strong online presence and deliver exceptional digital experiences. A collaborative leader with a passion for UX design and digital strategy, Elena is dedicated to driving business growth through impactful web solutions.">
     <title>Elena Tserioti | Web Developer-Team Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            color: #000;
-            font-style: normal;
-            min-height: 100vh;
-            font-size: 20px;
-            line-height: 24px;
-        }
         ::selection {
             background: rgb(255 235 51 / 30%)
         }
-        header {
-            display: table;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
         :root {
           --bg: #000000;
           --clr-1: #00c2ff;
@@ -41,12 +25,14 @@
           --ls: clamp(-1.75px, -0.25vw, -3.5px);
         }
         body {
-          min-height: 100vh;
-          display: grid;
-          place-items: center;
-          background-color: var(--bg);
-          color: #fff;
-          font-family: "Inter", "DM Sans", Arial, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: var(--bg);
+            color: #fff;
+            font-family: "Quicksand", cursive;
+            font-weight: 400;
+            font-style: normal;
         }
         *,
         *::before,
@@ -70,9 +56,10 @@
         .subtitle {
           max-width: 900px;
           width:100%;
-          text-align:left;
+          text-align:justify;
+          
         }
-        .aurora {
+        .elena {
           position: absolute;
           top: 0;
           left: 0;
@@ -82,7 +69,7 @@
           mix-blend-mode: darken;
           pointer-events: none;
         }
-        .aurora__item {
+        .elena__item {
           overflow: hidden;
           position: absolute;
           width: 60vw;
@@ -92,34 +79,34 @@
           filter: blur(var(--blur));
           mix-blend-mode: overlay;
         }
-        .aurora__item:nth-of-type(1) {
+        .elena__item:nth-of-type(1) {
           top: -50%;
-          animation: aurora-border 6s ease-in-out infinite,
-            aurora-1 12s ease-in-out infinite alternate;
+          animation: elena-border 6s ease-in-out infinite,
+            elena-1 12s ease-in-out infinite alternate;
         }
         
-        .aurora__item:nth-of-type(2) {
+        .elena__item:nth-of-type(2) {
           background-color: var(--clr-3);
           right: 0;
           top: 0;
-          animation: aurora-border 6s ease-in-out infinite,
-            aurora-2 12s ease-in-out infinite alternate;
+          animation: elena-border 6s ease-in-out infinite,
+            elena-2 12s ease-in-out infinite alternate;
         }
-        .aurora__item:nth-of-type(3) {
+        .elena__item:nth-of-type(3) {
           background-color: var(--clr-2);
           left: 0;
           bottom: 0;
-          animation: aurora-border 6s ease-in-out infinite,
-            aurora-3 8s ease-in-out infinite alternate;
+          animation: elena-border 6s ease-in-out infinite,
+            elena-3 8s ease-in-out infinite alternate;
         }
-        .aurora__item:nth-of-type(4) {
+        .elena__item:nth-of-type(4) {
           background-color: var(--clr-4);
           right: 0;
           bottom: -50%;
-          animation: aurora-border 6s ease-in-out infinite,
-            aurora-4 24s ease-in-out infinite alternate;
+          animation: elena-border 6s ease-in-out infinite,
+            elena-4 24s ease-in-out infinite alternate;
         }
-        @keyframes aurora-1 {
+        @keyframes elena-1 {
           0% {
             top: 0;
             right: 0;
@@ -137,7 +124,7 @@
             right: 0;
           }
         }
-        @keyframes aurora-2 {
+        @keyframes elena-2 {
           0% {
             top: -50%;
             left: 0%;
@@ -155,7 +142,7 @@
             left: 0%;
           }
         }
-        @keyframes aurora-3 {
+        @keyframes elena-3 {
           0% {
             bottom: 0;
             left: 0;
@@ -173,7 +160,7 @@
             left: 0;
           }
         }
-        @keyframes aurora-4 {
+        @keyframes elena-4 {
           0% {
             bottom: -50%;
             right: 0;
@@ -191,7 +178,7 @@
             right: 0;
           }
         }
-        @keyframes aurora-border {
+        @keyframes elena-border {
           0% {
             border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
           }
@@ -212,17 +199,14 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-    </header>
     <!-- Main Section -->
    <div class="content">
-      <h1 class="title">.Elena Tserioti
-            <div class="aurora">
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
-                <div class="aurora__item"></div>
+      <h1 class="title">Elena Tserioti
+            <div class="elena">
+                <div class="elena__item"></div>
+                <div class="elena__item"></div>
+                <div class="elena__item"></div>
+                <div class="elena__item"></div>
             </div>
         </h1>
         <p class="subtitle">A dynamic 38-year-old Front-End Developer with over a decade of experience in online marketing, particularly in the forex and real estate sectors. As a mother of two and a Computer Science graduate, Elena seamlessly balances her technical career with personal life, showcasing resilience and leadership.</p>
@@ -231,7 +215,5 @@
         <p class="subtitle">An extrovert, Elena excels in team settings, collaborating with designers, marketers, and stakeholders. Her strong communication and technical skills make her a valuable asset in fast-paced environments.</p>
         <p class="subtitle">Ready for new opportunities, Elena is eager to apply her blend of creativity, technical expertise, and collaboration skills to new projects. Whether contributing to innovative digital solutions or enhancing user experiences, she’s poised to make a meaningful impact in any setting.</p>
     </div>
-    <!-- Footer -->
-    <footer></footer>
 </body>
 </html>
